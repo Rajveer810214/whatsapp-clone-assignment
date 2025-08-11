@@ -24,13 +24,6 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": false
   },
-  "include": [
-    "src/**/*",
-    "processWebhookFiles.ts"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "client"
-  ]
+  "include": ["src/**/*", "src/processWebhookFiles.ts"],
+  "exclude": ["node_modules", "dist", "client"]
 }
