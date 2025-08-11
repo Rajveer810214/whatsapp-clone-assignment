@@ -54,7 +54,7 @@ const WhatsAppWebClone = () => {
   // Fetch conversations
   const fetchConversations = async () => {
     try {
-      const response = await fetch('http://localhost:3000/api/conversations');
+      const response = await fetch('https://whatsapp-clone-assignment-mwmu.onrender.com/api/conversations');
       const data = await response.json();
       console.log({data})
       setConversations(data);
@@ -68,7 +68,7 @@ const WhatsAppWebClone = () => {
   // Fetch messages for selected conversation
   const fetchMessages = async (conversationId: string) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/conversations/${conversationId}/messages`);
+      const response = await fetch(`https://whatsapp-clone-assignment-mwmu.onrender.com/api/conversations/${conversationId}/messages`);
       const data = await response.json();
       setMessages(data);
     } catch (error) {
@@ -93,7 +93,7 @@ const WhatsAppWebClone = () => {
         userName: 'Business'
       };
 
-      const response = await fetch('http://localhost:3000/api/messages', {
+      const response = await fetch('https://whatsapp-clone-assignment-mwmu.onrender.com/api/messages', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
