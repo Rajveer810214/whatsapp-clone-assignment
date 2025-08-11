@@ -1,0 +1,43 @@
+{
+  "name": "whatsapp-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+"dev": "nodemon --exec tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "process-files": "tsx processWebhookFiles.ts",
+    "clean": "rm -rf dist",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint src --ext .ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "whatsapp",
+    "webhook",
+    "typescript",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": "WhatsApp Web Clone Backend with TypeScript",
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.2.1",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.1",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "tsx": "^4.20.3",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
